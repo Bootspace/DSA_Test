@@ -10,7 +10,7 @@ const characterReplacement = function(s,k) {
         count[char] = (count[char] || 0) + 1;
 
         //Update max repeating character count
-r        maxFreq = Math.max(maxFreq, count[char]);
+      maxFreq = Math.max(maxFreq, count[char]);
 
         //If window is invalid, shrink the window from the left
         while((right - left + 1) - maxFreq > k) {
